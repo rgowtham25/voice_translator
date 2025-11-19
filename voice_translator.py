@@ -31,7 +31,7 @@ def voice_to_voice(audio_file):
 
 def audio_transcription(audio_file):
 
-    aai.settings.api_key = "48bfb3aa2250449baf2d8f6096a457a0"
+    aai.settings.api_key = ".........................."
 
     try:
         transcriber = aai.Transcriber()
@@ -58,12 +58,12 @@ def text_translation(text):
 def text_to_speech(text):
 
     client = ElevenLabs(
-        api_key= "sk_07f4a90a86e7b8f8cd62f1b1b57c6bf3bdc12d5b23be3631",
+        api_key= "sk.....",
     )
 
     # Calling the text_to_speech conversion API with detailed parameters
     response = client.text_to_speech.convert(
-        voice_id="RKCbSROXui75bk1SVpy8", #clone your voice on elevenlabs dashboard and copy the id
+        voice_id="......................", #clone your voice on elevenlabs dashboard and copy the id
         optimize_streaming_latency="0",
         output_format="mp3_22050_32",
         text=text,
